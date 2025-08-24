@@ -172,29 +172,10 @@ body {
   z-index: 3;
   animation: happyBirthday 5s;
 }
-  .ballon4 {
-    width: 60px;
-    height: 80px;
-    border-radius: 50% 50% 50% 50%;
-    position: relative;
-  }
 
-  .ballon4 {
-    background: #d46637;
-  }
 
-  .bottom4 {
-    width: 10px;
-    height: 15px;
-    background: gray;
-    margin-left: 25px;
-  }
-  .line4 {
-    width: 2px;
-    height: 80px;
-    background: #5e4945;
-    margin-left: 30px;
-  }
+
+
 @keyframes happyBirthday {
   from {
     transform: translateY(-570px);
@@ -230,7 +211,7 @@ body {
 
 .ballon1,
 .ballon2,
-.ballon3 {
+.ballon3,.ballon4 {
   width: 60px;
   height: 80px;
   border-radius: 50% 50% 50% 50%;
@@ -248,14 +229,16 @@ body {
 .ballon3 {
   background: #d4af37;
 }
-
-.bottom {
+  .ballon4 {
+    background: #d46637;
+  }
+.bottom,.bottom4 {
   width: 10px;
   height: 15px;
   background: gray;
   margin-left: 25px;
 }
-.line1 {
+.line1 ,.line4{
   width: 2px;
   height: 80px;
   background: #5e4945;
@@ -372,9 +355,21 @@ body {
   .ballons {
     top: 70%;
   }
+     .ballon4 {
+    display: none;
+  }
+
+
+  .bottom4 {
+    display: none;
+  }
+  .line4 {
+    display: none;
+}
 }
 
 @media (max-width: 376px) {
+
   .top {
     gap: 10px;
     justify-content: center;
@@ -408,4 +403,5 @@ body {
   .text {
     margin-top: 0;
   }
+ 
 }
